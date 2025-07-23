@@ -1,0 +1,31 @@
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none"
+   xmlns="http://www.w3.org/2000/svg">
+   <!-- Background Circle -->
+   <circle cx="200" cy="200" r="190" fill="url(#gradient1)" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+
+   <!-- Profile Icon -->
+   <circle cx="200" cy="160" r="45" fill="rgba(255,255,255,0.9)"/>
+   <path d="M200 180 C185 180, 175 190, 175 205 L175 230 L225 230 L225 205 C225 190, 215 180, 200 180 Z" fill="rgba(255,255,255,0.9)"/>
+
+   <!-- Design Elements -->
+   <rect x="80" y="80" width="40" height="40" rx="8" fill="rgba(245,158,11,0.8)" transform="rotate(15 100 100)"/>
+   <circle cx="320" cy="120" r="20" fill="rgba(16,185,129,0.8)"/>
+   <rect x="60" y="280" width="30" height="30" rx="6" fill="rgba(255,255,255,0.6)" transform="rotate(-20 75 295)"/>
+   <circle cx="340" cy="300" r="15" fill="rgba(37,99,235,0.8)"/>
+
+   <!-- Text -->
+   <text x="200" y="320" text-anchor="middle" fill="rgba(255,255,255,0.9)" font-family="Arial, sans-serif" font-size="18" font-weight="600">
+    Gabin
+   </text>
+   <text x="200" y="345" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="Arial, sans-serif" font-size="14">
+    Visual Designer
+   </text>
+
+   <!-- Gradient Definition -->
+   <defs>
+      <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+         <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+         <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+      </linearGradient>
+   </defs>
+</svg>
