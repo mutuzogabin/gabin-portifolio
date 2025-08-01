@@ -184,25 +184,19 @@ function initContactForm() {
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
-            
-            // Get form data
             const formData = new FormData(this);
             const data = Object.fromEntries(formData);
             
-            // Simple validation
             if (!data.email || !data.message) {
                 showNotification('Please fill in all required fields.', 'error');
                 return;
             }
-            
-            // Simulate form submission
             const submitBtn = this.querySelector('button[type="submit"]');
             const originalText = submitBtn.textContent;
             
             submitBtn.textContent = 'Sending...';
             submitBtn.disabled = true;
             
-            // Simulate API call
             setTimeout(() => {
                 showNotification('Thank you! Your message has been sent successfully.', 'success');
                 this.reset();
@@ -213,7 +207,7 @@ function initContactForm() {
     }
 }
 
-// Notification System
+
 function showNotification(message, type = 'info') {
     const notification = document.createElement('div');
     notification.className = `fixed top-4 right-4 z-50 p-4 rounded-lg shadow-lg text-white max-w-sm transform translate-x-full transition-transform duration-300 ${
